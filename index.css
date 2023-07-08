@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url("https://img.freepik.com/vetores-gratis/fundo-borrado-brilhante_1107-120.jpg?w=740&t=st=1688823273~exp=1688823873~hmac=193539b42f78659cd50ee0589d94d740e88abe8b0991647f46aa5d472d9eb725");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    width: 400px;
+    height: 350px;
+    padding: 15px;
+    background-color: #15151b;
+    border-radius: 10px;
+    box-shadow: 10px;
+    margin: auto;
+    margin-top: 25vh;
+    transition: 0.4s;
+}
+
+h1{
+    color: white;
+    font: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+    margin: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #b9b9ca;
+}
+
+button:active{
+    transform: scale(0.8);
+    transition: 0.1s;
+}
+
+.dividerOperator button:nth-of-type(7){
+    width: 180px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.dividerNum, .dividerOperator{
+    width: 200px;
+}
+
+#resultado{
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 4px #332f31;
+    height: 40px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#resultado:focus{
+    outline: 0;
+    box-shadow: 0 0 8px 4px #8f858a;
+    transition: 0.5s;
+}
+
+@media (max-width: 320px){
+    body{
+        height: 100vh;
+    }
+
+    main{
+        overflow-x: hidden;
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 250px;
+        height: 600px;
+    }
+
+    #resultado{
+        width: 185px;
+        margin-left: 27px;
+    }
+    
+    .dividerNum button:nth-of-type(10){
+        width: 180px;
+    }
+
+    .dividerOperator{
+        margin-top: 15px;
+    }
+}
+
+@media (min-width:  360px){
+    body{
+        height: 100vh;
+    }
+
+    main{
+        overflow-x: hidden;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 250px;
+        height: 600px;
+    }
+
+    #resultado{
+        width: 200px;
+        margin-left: 20px;
+    }
+    
+    .dividerNum button:nth-of-type(10){
+        width: 180px;
+    }
+
+    .dividerOperator{
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width: 425px){
+    body{
+        height: 100vh;
+    }
+
+    main{
+        overflow-x: hidden;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 350px;
+        height: 400px;
+    }
+
+    #resultado{
+        width: 300px;
+        margin-left: 20px;
+    }
+    
+    .dividerNum button:nth-of-type(10){
+        width: 180px;
+    }
+
+    .dividerOperator{
+        margin-top: 15px;
+    }
+
+    .container{
+        transform: scale(0.8);
+        width: 400px;
+        margin-left: -15px;
+    }
+
+}
+
+@media (min-width: 500px){
+
+}
